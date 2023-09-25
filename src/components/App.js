@@ -22,7 +22,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <p>To-Do List<p>
+      <p>To-Do List</p>
       <div>
       <input
         type="text"
