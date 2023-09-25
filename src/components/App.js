@@ -21,18 +21,21 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="app">
       <h2>To-Do List</h2>
+      <div>
       <input
         type="text"
         placeholder="Add a new task"
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
       />
-      <button onClick={addTodo}>Add</button>
+      <button onClick={addTodo}>Add ToDo</button>
+      </div>
+      
         {todos.map((todo, index) => (
-          <div key={index}>
-            {todo}
+          <div key={index} className="item">
+            <div>{todo}</div>
             <button onClick={() => deleteTodo(index)}>Delete</button>
           </div>
         ))}

@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
 }
-/* .item{
+.item{
+    width:70%;
     display:flex;
-    justify-content: ;
-} */
+    justify-content: space-around;
+}
